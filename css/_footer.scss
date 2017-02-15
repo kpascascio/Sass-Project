@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+footer[role="contentinfo"] {
+	// No floating elements allowed on the left or the right side of a specified <p> element:
+	clear: both;
+	@include borderradius(5px);
+
+	padding: $narrow-topbottom-padding $rightleft-padding;
+
+	background: {
+		color: $half-opaque-white;
+	}
+
+	p {
+		color:$footer-font-color;
+		font: {
+			size: $body-font-size;
+			family: Helvetica, Arial, sans-serif;
+			weight: $text-weight;
+		}
+
+		a {
+			text-decoration: none;
+			&:hover {
+				color: $header-rollover-color;
+			}
+		}
+	}
+}

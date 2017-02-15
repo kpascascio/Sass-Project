@@ -1,0 +1,45 @@
+@import 'variables';
+@import "mixins";
+
+section[role="main"] {
+	padding: $narrow-topbottom-padding $rightleft-padding;
+	@include borderradius(5px);
+	margin:1em 0;
+	width: $main-content-width;
+	float:left;
+	background: {
+		color: $half-opaque-white;
+	}
+
+	article {
+		color: $body-font-color;
+
+		font: {
+			size: $body-font-size;
+			family: Helvetica, Arial, sans-serif;
+			weight: $text-weight;
+		}
+
+		h1 {
+			color: $page-title-color;
+			font: {
+				size: $page-title-size;
+				family: Helvetica, Arial, sans-serif;
+				weight: $text-weight;
+				border-bottom:1px solid #ccc;
+			}
+		}
+
+		p {
+			font: #{$body-font-size}/#{$body-line-height} Helvetica;
+		}
+
+		p.highlighted {
+			font-style: italic;
+
+			&-special {
+				font-weight:bold;
+			}
+		}
+	}
+}

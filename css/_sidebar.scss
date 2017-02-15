@@ -1,0 +1,41 @@
+@import "variables";
+
+aside.sidebar {
+	margin:1em 0;
+	padding: $narrow-topbottom-padding $rightleft-padding;
+	width: $sidebar-width;
+	float: right;
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		li {
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			margin-bottom: 0.7em;
+
+			a {
+				display: block;
+				padding: 0.5em;
+				background: {
+					color: #ccc;
+				}
+
+				font: {
+					size: $sidebar-font-size;
+					family: Helvetica, Arial, sans-serif;
+					weight: $text-weight;
+				}
+
+				&:hover {
+					color: #fff;
+					background: {
+						color: #999;
+					}
+				}
+			}
+		}
+	}
+}

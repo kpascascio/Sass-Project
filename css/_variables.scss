@@ -1,0 +1,37 @@
+$bright-red: #f00;
+$medium-red: #c00;
+$dark-black: #000;
+$dark-grey: #333;
+$light-grey: #999;
+$half-opaque-white: rgba(255,255,255,0.4);
+
+$default-link-color: $medium-red;
+$header-title-color: $bright-red;
+$header-rollover-color: $dark-black;
+$page-title-color: darken($medium-red, 10%);
+$body-font-color: $dark-grey;
+$footer-font-color: $light-grey;
+
+$text-weight: 200;
+
+$site-title-size: 20px;
+$tagline-size: 16px;
+$page-title-size: 36px;
+$body-font-size: 14px;
+$body-line-height: 20px;
+$sidebar-font-size: 16px;
+
+$rightleft-padding: 2.5%;
+$tall-topbottom-padding: 1%;
+$narrow-topbottom-padding: 0.5%;
+
+$site-width: 90%;
+$main-content-width: 68%;
+
+/* sidebar width has to account for right/left padding of sidebar and of main content section */
+$sidebar-width: 99% - $main-content-width - (4 * $rightleft-padding);
+
+// this single line comment won't show in output
+
+/*! this comment will show even in compressed style */
+$top-element-margin: 1em;

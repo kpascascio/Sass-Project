@@ -1,0 +1,36 @@
+@import 'variables';
+@import "mixins";
+
+header[role="banner"] {
+	padding: $tall-topbottom-padding $rightleft-padding;
+
+
+  @include borderradius(5px);
+	background: {
+		color: $half-opaque-white;
+	}
+
+	a {
+		color: $header-title-color;
+		text-decoration: none;
+		&:hover {
+			color: $header-rollover-color;
+		}
+	}
+
+	h2 {
+		font: {
+			size: $site-title-size;
+			family: Helvetica, Arial, sans-serif;
+			weight: $text-weight;
+		}
+	}
+
+	h3 {
+		font: {
+			size: $tagline-size;
+			family: Helvetica, Arial, sans-serif;
+			weight: $text-weight;
+		}
+	}
+}

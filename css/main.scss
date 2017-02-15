@@ -1,85 +1,24 @@
+@import "variables";
+@import "mixins";
+
+@import 'header';
+@import "body";
+@import "sidebar";
+@import "footer";
+
 body {
-  background-color: #f5f5f5;
+	background: {
+		image: url(../img/shattered.png);
+		repeat: repeat;
+	}
 }
 
 a {
-  color: #f00;
+	color: $default-link-color;
+	text-decoration: none;
 }
 
-#wrapper{
-  width: 80%;
-  margin: 2em auto;
-}
-
-header[role="banner"] {
-  padding: 1em 2em;
-  background: {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  a {
-    color: #c00;
-    text-decoration: none;
-    &:hover{
-      color:#000;
-    }
-    h2 {
-      font: {
-        size: 20px;
-        family: Helvetica, Arial, sans-serif;
-        weight: 200;
-      }
-    }
-    h3 {
-      font: {
-        size: 1em;
-        family: Helvetica, Arial, sans-serif;
-        weight: 200;
-      }
-    }
-  }
-}
-
-section[role="main"] {
-  padding:0.5em 2em;
-  margin-top:1em;
-
-  background: {
-    color: rgba(255, 255, 255, 0.5);
-  }
-
-  article{
-    color: #333;
-
-    font: {
-      size: 14px;
-      family: Helvetica, Arial, sans-serif;
-      weight: 200;
-    }
-
-    h1 {
-      color: #c00;
-
-      font: {
-        size: 36px;
-        family: Helvetica, Arial, sans-serif;
-        weight: 200;
-        border-bottom: 1px solid #ccc;
-      }
-    }
-  }
-}
-
-footer[role="contentinfo"]{
-  padding: 0.5em 2em;
-  color: #666;
-
-  background: {
-    color: rgba(255, 255, 255, 0.5);
-  }
-
-  font: {
-    size: 14px;
-    family: Helvetica, Arial, sans-serif;
-    weight: 200;
-  }
+#wrapper {
+	width: $site-width;
+	margin: 2em auto;
 }
